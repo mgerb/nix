@@ -21,7 +21,14 @@
     wget
     vim
     neovim
-    postgresql_16
+    ripgrep
+    fd
+    rustc
+    cargo
+    tmux
+    starship
+    zsh
+    oh-my-zsh
   ];
 
   home-manager = {
@@ -30,4 +37,15 @@
       "nixos" = import ./home.nix;
     };
   };
+
+  nixpkgs.config.allowUnfree = true;
+
+  programs.zsh = {
+    enable = true;
+    ohMyZsh = {
+      enable = true;
+    };
+  };
+
+  users.defaultUserShell = pkgs.zsh;
 }

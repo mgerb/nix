@@ -1,4 +1,3 @@
-
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -13,7 +12,7 @@
   outputs = { self, nixpkgs, nixos-wsl, ... }@inputs: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
-	specialArgs = {inherit inputs;};
+        specialArgs = { inherit inputs; };
         system = "x86_64-linux";
         modules = [
           nixos-wsl.nixosModules.default
@@ -21,8 +20,8 @@
             system.stateVersion = "24.05";
             wsl.enable = true;
           }
-	  ./configuration.nix
-	  inputs.home-manager.nixosModules.default
+          ./configuration.nix
+          inputs.home-manager.nixosModules.default
         ];
       };
     };
