@@ -48,6 +48,10 @@
       source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/config/nvim";
     };
 
+    ".config/hypr/hyprland.conf" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/hyprland.conf";
+    };
+
     ".zshrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/.zshrc";
     };
