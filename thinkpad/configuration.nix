@@ -53,9 +53,9 @@
   services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
-    xkbVariant = "";
+    variant = "";
   };
 
   # Enable CUPS to print documents.
@@ -117,8 +117,16 @@
     zig
     oh-my-zsh
     kitty
-    dunst
     wl-clipboard
+    unzip
+
+    # hyprland stuff
+    dunst
+    pipewire
+    wireplumber
+    xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
+    rofi-wayland
   ];
 
   home-manager = {

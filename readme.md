@@ -1,6 +1,10 @@
 # NixOS
 
-My NixOS config files.
+- collect garbage and delete
+  `sudo nix-collect-garbage -d`
+- build without cache
+  `sudo nixos-rebuild switch --flake ./thinkpad --option eval-cache false`
 
-- rebuild
-  `sudo nixos-rebuild switch --flake /home/nixos/nix#nixos`
+## Thinkpad
+
+`sudo nixos-rebuild switch --flake ./thinkpad`
