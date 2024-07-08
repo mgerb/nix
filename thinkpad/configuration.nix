@@ -6,7 +6,8 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
     ];
@@ -26,24 +27,6 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-
-  # Set your time zone.
-  time.timeZone = "America/Chicago";
-
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
-  };
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -95,39 +78,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    vim
-    git
-    wget
-    vim
-    neovim
-    ripgrep
-    fd
-    rustc
-    cargo
-    tmux
-    starship
-    zsh
-    gnumake
-    gcc
-    clang
-    zig
-    oh-my-zsh
-    kitty
-    wl-clipboard
-    unzip
-
-    # hyprland stuff
-    dunst
-    pipewire
-    wireplumber
-    xdg-desktop-portal-hyprland
-    xdg-desktop-portal-gtk
-    rofi-wayland
-  ];
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };

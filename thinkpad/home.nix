@@ -44,17 +44,26 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 
+    ".zshrc" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/.zshrc";
+    };
+
     ".config/nvim" = {
       source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/config/nvim";
+    };
+
+    ".config/starship.toml" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/config/starship.toml";
     };
 
     ".config/hypr/hyprland.conf" = {
       source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/hyprland.conf";
     };
 
-    ".zshrc" = {
-      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/.zshrc";
-    };
+    # ".zshrc" = {
+    #   source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/.zshrc";
+    # };
+
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''

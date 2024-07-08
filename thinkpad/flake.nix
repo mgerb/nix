@@ -16,6 +16,10 @@
         specialArgs = { inherit inputs; };
         system = "x86_64-linux";
         modules = [
+          ../modules/packages.nix
+          ../modules/misc.nix
+          ../modules/zsh.nix
+          ./modules/packages.nix
           ./configuration.nix
           inputs.home-manager.nixosModules.default
           inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t14s
