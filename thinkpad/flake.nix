@@ -19,6 +19,8 @@
           ../modules/packages.nix
           ../modules/misc.nix
           ../modules/zsh.nix
+          ../modules/hyprland.nix
+          ../modules/fonts.nix
           ./modules/packages.nix
           ./configuration.nix
           inputs.home-manager.nixosModules.default

@@ -1,3 +1,5 @@
+# base packages for all my environments
+
 { config, pkgs, inputs, ... }:
 
 {

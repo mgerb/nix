@@ -57,8 +57,37 @@
     };
 
     ".config/hypr/hyprland.conf" = {
-      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/hyprland.conf";
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/hypr/hyprland.conf";
     };
+
+    ".config/hypr/hyprpaper.conf" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/hypr/hyprpaper.conf";
+    };
+
+    ".config/hypr/hypridle.conf" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/hypr/hypridle.conf";
+    };
+
+    ".config/hypr/hyprlock.conf" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/hypr/hyprlock.conf";
+    };
+
+    ".config/hypr/hyprshade.toml" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/hypr/hyprshade.toml";
+    };
+
+    ".config/hypr/shaders" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/hypr/shaders";
+    };
+
+    ".tmux.conf" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/.tmux.conf";
+    };
+
+    ".config/kitty/kitty.conf" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/config/kitty/kitty.conf";
+    };
+
 
     # ".zshrc" = {
     #   source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/.zshrc";

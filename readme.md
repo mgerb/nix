@@ -11,8 +11,5 @@
 
 ### TODO
 
-- set zsh as shell for neovim
-- nerdfonts
 - configure a status bar
   - volume control
-  - battery indicator
