@@ -1,13 +1,9 @@
 # base packages for all my environments
-
-{ config, pkgs, inputs, ... }:
-
-{
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     vim
     git
     wget
-    neovim
     ripgrep
     fd
     rustc
@@ -20,5 +16,6 @@
     zig
     wl-clipboard
     unzip
+    htop
   ];
 }

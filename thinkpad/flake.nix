@@ -10,10 +10,14 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
+  outputs = {
+    self,
+    nixpkgs,
+    ...
+  } @ inputs: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = {inherit inputs;};
         system = "x86_64-linux";
         modules = [
           ../modules/packages.nix
@@ -21,6 +25,7 @@
           ../modules/zsh.nix
           ../modules/hyprland.nix
           ../modules/fonts.nix
+          ../modules/neovim.nix
           ./modules/packages.nix
           ./configuration.nix
           inputs.home-manager.nixosModules.default

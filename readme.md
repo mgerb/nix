@@ -11,5 +11,10 @@
 
 ### TODO
 
+- zsh
+  - configure starship
+  - aliases
+- docker
+- kvm
 - configure a status bar
   - volume control
