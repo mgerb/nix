@@ -1,7 +1,5 @@
 # packages for hyprland environment
-
-{ config, pkgs, ... }:
-{
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     kitty
     dunst
@@ -20,4 +18,6 @@
     hyprshade
     hyprcursor
   ];
+
+  programs.hyprland.enable = true;
 }

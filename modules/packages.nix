@@ -9,7 +9,6 @@
     rustc
     cargo
     tmux
-    starship
     gnumake
     gcc
     clang

@@ -26,6 +26,9 @@
           ../modules/hyprland.nix
           ../modules/fonts.nix
           ../modules/neovim.nix
+          ../modules/shell-aliases.nix
+          ../modules/networking.nix
+          ../modules/audio.nix
           ./modules/packages.nix
           ./configuration.nix
           inputs.home-manager.nixosModules.default
