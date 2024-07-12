@@ -16,5 +16,6 @@
     wl-clipboard
     unzip
     htop
+    jq
   ];
 }

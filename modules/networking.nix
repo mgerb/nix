@@ -1,7 +1,10 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # wireless network TUI
-    impala
+    # impala # iwd TUI
+    # iwd
+    networkmanagerapplet
+    blueman
   ];
 
   # Configure network proxy if necessary
@@ -16,10 +19,10 @@
 
   networking.hostName = "nixos";
   # not used because we use network manager with iwd
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  # networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking
   networking.networkmanager.enable = true;
-  networking.wireless.iwd.enable = true;
-  networking.networkmanager.wifi.backend = "iwd";
+  # networking.wireless.iwd.enable = true;
+  # networking.networkmanager.wifi.backend = "iwd";
 }

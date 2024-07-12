@@ -17,6 +17,7 @@
     hyprlock
     hyprshade
     hyprcursor
+    grimblast # screenshots
   ];
 
   programs.hyprland.enable = true;

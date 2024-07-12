@@ -1,4 +1,8 @@
-{config, pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "mg";
@@ -75,6 +79,14 @@
 
     ".config/kitty/kitty.conf" = {
       source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/config/kitty/kitty.conf";
+    };
+
+    ".config/waybar/config.jsonc" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/config/waybar/config.jsonc";
+    };
+
+    ".config/waybar/style.css" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/git/dotfiles/config/waybar/style.css";
     };
 
     # # You can also set the file content immediately.
