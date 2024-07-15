@@ -14,17 +14,21 @@
     ...
   } @ inputs: {
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+      # hostname
+      snixos = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         system = "x86_64-linux";
         modules = [
-          ../modules/misc.nix
+          ../modules/base.nix
           ../modules/packages.nix
           ../modules/neovim.nix
           ../modules/shell-aliases.nix
           ../modules/zsh.nix
           ../modules/fonts.nix
+          ../modules/systemd.nix
 
+          ./modules/zfs.nix
+          ./modules/networking.nix
           ./modules/packages.nix
           ./modules/samba.nix
 

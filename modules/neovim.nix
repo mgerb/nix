@@ -5,5 +5,6 @@
     # formatters
     alejandra
     stylua
+    prettierd
   ];
 }

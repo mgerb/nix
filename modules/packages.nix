@@ -6,16 +6,20 @@
     wget
     ripgrep
     fd
-    rustc
-    cargo
     tmux
-    gnumake
-    gcc
-    clang
-    zig
     wl-clipboard
     unzip
     htop
     jq
+
+    rustc
+    rustfmt
+    go
+    cargo
+    nodejs
+    gnumake
+    gcc
+    clang
+    zig
   ];
 }

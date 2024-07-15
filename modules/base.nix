@@ -1,8 +1,17 @@
 {...}: {
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  # docker
+  virtualisation.docker.enable = true;
 
   # Set your time zone.
   time.timeZone = "America/Chicago";

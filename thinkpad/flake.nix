@@ -21,7 +21,7 @@
         system = "x86_64-linux";
         modules = [
           ../modules/packages.nix
-          ../modules/misc.nix
+          ../modules/base.nix
           ../modules/zsh.nix
           ../modules/hyprland.nix
           ../modules/fonts.nix
@@ -29,6 +29,7 @@
           ../modules/shell-aliases.nix
           ../modules/networking.nix
           ../modules/audio.nix
+          ../modules/systemd.nix
           ./modules/packages.nix
           ./configuration.nix
           inputs.home-manager.nixosModules.default

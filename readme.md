@@ -9,9 +9,13 @@
 
 `sudo nixos-rebuild switch --flake ./thinkpad`
 
+## Home Server
+
+`sudo nixos-rebuild switch --flake ./home-server`
+
 ### TODO
 
-- kvm
-- samba
-- configure a status bar
-  - volume control
+- thinkpad
+  - kvm
+  - configure a status bar
+    - volume control
