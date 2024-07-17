@@ -5,6 +5,17 @@
 - build without cache
   `sudo nixos-rebuild switch --flake ./thinkpad --option eval-cache false`
 
+## Updating
+
+```sh
+sudo nix-channel --update
+
+# cd into host config
+cd thinkpad
+sudo nix update flake
+sudo nixos-rebuild switch .
+```
+
 ## Thinkpad
 
 `sudo nixos-rebuild switch --flake ./thinkpad`

@@ -23,13 +23,15 @@
           ../modules/packages.nix
           ../modules/base.nix
           ../modules/zsh.nix
-          ../modules/hyprland.nix
           ../modules/fonts.nix
           ../modules/neovim.nix
           ../modules/shell-aliases.nix
-          ../modules/networking.nix
-          ../modules/audio.nix
           ../modules/systemd.nix
+
+          ../modules/desktop/audio.nix
+          ../modules/desktop/hyprland.nix
+          ../modules/desktop/networking.nix
+
           ./modules/packages.nix
           ./configuration.nix
           inputs.home-manager.nixosModules.default
