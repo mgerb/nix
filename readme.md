@@ -12,7 +12,7 @@ sudo nix-channel --update
 
 # cd into host config
 cd thinkpad
-sudo nix update flake
+sudo nix flake update
 sudo nixos-rebuild switch .
 ```
 
