@@ -11,11 +11,8 @@
     unzip
     htop
     jq
-
-    rustc
-    rustfmt
+    rustup
     go
-    cargo
     nodejs
     gnumake
     gcc
