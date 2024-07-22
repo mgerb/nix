@@ -12,12 +12,14 @@
     brightnessctl
     pavucontrol
 
+    hyprland
     hyprpaper
     hypridle
     hyprlock
     hyprshade
     hyprcursor
     grimblast # screenshots
+    libnotify
   ];
 
   programs.hyprland.enable = true;

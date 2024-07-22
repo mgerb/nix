@@ -43,7 +43,6 @@
     isNormalUser = true;
     description = "mg";
     extraGroups = ["networkmanager" "wheel" "docker"];
-    initialPassword = "$6$gG9Q9MLgaeJ1n9V9$fdf8NFN1Ipf1jSxczl1OohZLTrOAv4XAR49WoJoGR7OCAUYbEgw5ozSg8Wc0.kKzk1B5H9UA6xvUb3Ln16MR..";
   };
 
   # Install firefox.

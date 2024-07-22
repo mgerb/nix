@@ -31,6 +31,7 @@
           ../modules/desktop/audio.nix
           ../modules/desktop/hyprland.nix
           ../modules/desktop/networking.nix
+          ../modules/desktop/disable-keyboard.nix
 
           ./modules/packages.nix
           ./configuration.nix
